@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* the style */
+
+
+body {
+    background-image: url('white_wall_hash.png');
+    font: 16px/20px arial, sans-serif;
+}
+
+        .container{
+            width: 950px;
+            margin: auto;
+            color: #333;
+            background-color: whitesmoke;
+        }
+
+        .header {
+            padding: 20px;
+            padding-bottom: 10px;
+        }
+
+        .header h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            padding: 10px 0;
+        }
+
+        .header ul {}
+        
+
+        ul li{
+            font-weight: bolder;
+            display: inline-block;
+            margin: auto;
+            margin-top: 20px;
+            margin-right: 10px;
+            padding: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: brown;
+        }
+
+        .slider {
+            background-image: url('slider.jpg');
+            height: 400px;
+            border-top: 5px solid orangered;
+            border-bottom: 5px solid brown;
+            background-size: cover;
+        }
+
+        
+        .main {
+            width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+       
+        .main h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .main .author {
+            font-size: 11px;
+        }
+
+        .main p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+
+        .sidebar {
+            width: 300px;
+            float: right;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .sidebar img {
+            width: 70px;
+            height: 70px;
+            float: left;
+            padding-right: 10px;
+            text-align: justify;
+        }
+
+        .sidebar p {
+            font: 12px/18px arial;
+            text-align: justify;
+        }
+
+
+
+        /* clearfix */
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
+        
+
+       
+        
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h2>awalone.com</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="slider"></div>
+        </div>
+
+            <div class="content cf">
+                <div class="main">
+                    <h2>Judul Artikel</h2>
+                    <p class="author">ditulis oleh <a href="#">Awal Kurniawan</a>, pada 1 januari 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio, cupiditate nostrum porro esse similique quibusdam, voluptatem commodi eum debitis ab nobis non pariatur ad, rem excepturi reiciendis itaque architecto dolorem sint expedita? Explicabo sit odit cum. Possimus facere sunt, adipisci ex ad nisi a obcaecati numquam recusandae quas rem laborum deserunt at. Voluptatem sequi id necessitatibus error. Quia vero perferendis ex iste harum sapiente doloribus suscipit quos neque, alias itaque dolorem iure molestias pariatur, eum praesentium ab! Amet illo voluptates adipisci possimus porro, sed optio dicta quibusdam ipsam eum repudiandae laborum voluptas molestiae dolore delectus a, tenetur autem placeat hic consequuntur, ducimus architecto suscipit in odio! Vero natus saepe iste similique, reiciendis odit delectus fugit modi suscipit sint deleniti repudiandae sunt libero distinctio aliquam? Eius architecto doloremque consectetur ipsam autem, vitae beatae itaque rerum dolorum, eveniet totam inventore sed corrupti corporis magni facilis facere est voluptatem molestiae, doloribus quo ea? Alias reiciendis, similique, ex laboriosam, consequuntur doloribus non aliquid labore tenetur velit expedita sed nemo neque. Culpa impedit accusantium, officiis exercitationem dicta hic fugiat unde ducimus reprehenderit explicabo, commodi obcaecati quaerat iure, repellendus excepturi quos consectetur! Ducimus velit ratione sint repellendus, dolorem, perspiciatis iure neque molestias laborum vel consequuntur?</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, in sunt debitis saepe ratione reiciendis a. Laudantium, perferendis accusantium aspernatur, voluptas iure expedita unde dolore ea doloribus saepe distinctio? Eum nesciunt dolores atque ullam. Ea nemo quae itaque accusamus consectetur, sunt quidem consequatur deleniti saepe vitae?</p>
+                </div>
+                
+
+                <div class="sidebar">
+                    <h3>Awalone</h3>
+                    <img src="logo.jpg" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum corporis eligendi cum possimus asperiores ex, quasi temporibus ullam tenetur accusantium, laboriosam incidunt sunt nulla molestiae omnis aliquid repudiandae quae doloremque? Eveniet, nulla nihil! Sapiente similique maxime libero ut reiciendis.</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

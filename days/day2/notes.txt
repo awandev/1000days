@@ -1,0 +1,48 @@
+display
+
+- setiap tag HTML berada di dalam sebuah kotak (box). properti display pada CSS mengatur perilaku dari kotak tersebut.
+
+- setiap tag HTML memiliki nilai default untuk property display. tapi bisa diubah perilaku dari tag tersebut dengan mengganti valuenya.
+
+- display , memiliki 4 value 
+    - inline
+        * tidak menambahkan baris baru ketika dibuat.
+        * lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+        * tidak dapat mengatur tinggi dan lebar dari elemen tersebut
+        * margin dan padding hanya mempengaruhi element secara HORIZONTAL.
+        contoh element inline
+        b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea,
+
+        contoh : 
+        <div class="navigasi">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Profile</a>
+        </div>
+
+        maka hasilnya, tampilan link akan berjejer ke kanan, bukan ke bawah, karena secara default tidak ditambahkan baris baru.
+
+    - inline-block
+        * tidak ada element yang secara default memiliki properti display inline-block
+        * harus diubah secara manual properti tersebut.
+        * perilaku dasarnya sama dengan element inline
+        * perbedaannya, elemen inline-block dapat diatur tinggi dan lebarnya
+
+    - block
+        * element HTML yang secara default menambahkan baris baru ketika dibuat
+        * jika tidak diatur lebarnya, maka lebar default dari element block akan memenuhi lebar dari browser/parent 
+        * kita dapat mengatur tinggi dan lebar dari element block 
+        * di dalam element block, kita dapat  menyimpan tag dengan element inline, inline-block, atau bahkan element block lagi .
+
+        contoh element block 
+            h1-h6, p, ol, ul, li, form, hr, div
+    - none
+
+
+    Overflow 
+        penanganan bila konten di dalam element melebihi kapasitas
+        nilainya :
+        - visible 
+        - auto 
+        - hidden 
+        - scroll
